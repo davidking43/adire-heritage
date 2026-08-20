@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adire Heritage ✨</title>
+
+<style>
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: #222222;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+
+    height: 56px;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #dddddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 17px;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 100;
+
+}
+
+
+/* SHOP NAME */
+
+.logo {
+
+    color: #ff4b00;
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   CART BUTTON
+========================================= */
+
+.cart-button {
+
+    position: relative;
+
+    width: 40px;
+
+    height: 40px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+}
+
+
+/* CART NUMBER */
+
+.cart-count {
+
+    position: absolute;
+
+    top: -2px;
+
+    right: -3px;
+
+    min-width: 18px;
+
+    height: 18px;
+
+    padding: 0 4px;
+
+    border-radius: 50%;
+
+    background: #ff4b00;
+
+    color: #ffffff;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    line-height: 18px;
+
+    text-align: center;
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+.search-section {
+
+    width: 100%;
+
+    padding: 10px 12px 12px;
+
+    background: #ffffff;
+
+}
+
+
+.search-box {
+
+    width: 100%;
+
+    height: 42px;
+
+    border: 1px solid #d5d5d5;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    background: #f8f8f8;
+
+}
+
+
+.search-icon {
+
+    font-size: 17px;
+
+    margin-right: 8px;
+
+}
+
+
+.search-box input {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+
+.products {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 6px;
+
+    padding: 0 7px 25px;
+
+}
+
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.product-card {
+
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.10);
+
+}
+
+
+/* =========================================
+   PRODUCT IMAGE
+========================================= */
+
+.product-image {
+
+    width: 100%;
+
+    height: 185px;
+
+    object-fit: cover;
+
+    display: block;
+
+    background: #eeeeee;
+
+}
+
+
+/* =========================================
+   PRODUCT DETAILS
+========================================= */
+
+.product-details {
+
+    padding: 8px 10px 9px;
+
+    background: #ffffff;
+
+}
+
+
+.product-name {
+
+    margin: 0 0 8px;
+
+    font-size: 14px;
+
+    color: #222222;
+
+}
+
+
+.product-price {
+
+    margin: 0 0 8px;
+
+    color: #ff4b00;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   ADD TO CART
+========================================= */
+
+.add-button {
+
+    width: 100%;
+
+    height: 34px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background: #242424;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.add-button:hover {
+
+    background: #ff4b00;
+
+}
+
+
+/* =========================================
+   BOTTOM CUSTOMER CARE
+========================================= */
+
+.customer-care {
+
+    text-align: center;
+
+    font-size: 11px;
+
+    color: #777777;
+
+    line-height: 1.6;
+
+    padding: 20px 10px 8px;
+
+    border-top: 1px solid #eeeeee;
+
+}
+
+
+.customer-care-title {
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #555555;
+
+}
+
+
+.customer-care a {
+
+    color: #ff4b00;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+/* =========================================
+   APP DOWNLOAD
+========================================= */
+
+.app-download {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 5px 10px 25px;
+
+    background: #ffffff;
+
+}
+
+
+.app-button {
+
+    width: 150px;
+
+    height: 43px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    color: #ffffff;
+
+    background: #050505;
+
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+
+    transition: transform 0.15s;
+
+}
+
+
+.app-button:hover {
+
+    transform: translateY(-1px);
+
+}
+
+
+.apple-logo {
+
+    font-size: 27px;
+
+    line-height: 1;
+
+}
+
+
+.play-logo {
+
+    font-size: 20px;
+
+    line-height: 1;
+
+}
+
+
+.app-button small {
+
+    display: block;
+
+    font-size: 8px;
+
+    line-height: 10px;
+
+}
+
+
+.app-button strong {
+
+    display: block;
+
+    font-size: 16px;
+
+    line-height: 17px;
+
+}
+
+
+/* =========================================
+   CART OVERLAY
+========================================= */
+
+.cart-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.45);
+
+    display: none;
+
+    justify-content: flex-end;
+
+    z-index: 500;
+
+}
+
+
+.cart-overlay.open {
+
+    display: flex;
+
+}
+
+
+/* =========================================
+   CART PANEL
+========================================= */
+
+.cart-panel {
+
+    width: 420px;
+
+    max-width: 100%;
+
+    height: 100vh;
+
+    background: #ffffff;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+}
+
+
+/* =========================================
+   CART HEADER
+========================================= */
+
+.cart-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid #dddddd;
+
+    padding-bottom: 12px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.cart-header h2 {
+
+    margin: 0;
+
+    color: #ff4b00;
+
+    font-size: 21px;
+
+}
+
+
+.close-cart {
+
+    border: none;
+
+    background: #eeeeee;
+
+    width: 34px;
+
+    height: 34px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================
+   CART ITEMS
+========================================= */
+
+.cart-item {
+
+    display: flex;
+
+    gap: 10px;
+
+    padding: 10px 0;
+
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+
+.cart-item-image {
+
+    width: 70px;
+
+    height: 60px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+
+}
+
+
+.cart-item-info {
+
+    flex: 1;
+
+}
+
+
+.cart-item-name {
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.cart-item-price {
+
+    color: #ff4b00;
+
+    font-size: 13px;
+
+    margin-top: 4px;
+
+}
+
+
+/* =========================================
+   QUANTITY
+========================================= */
+
+.quantity {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 7px;
+
+}
+
+
+.quantity button {
+
+    width: 26px;
+
+    height: 26px;
+
+    border: 1px solid #cccccc;
+
+    background: #ffffff;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+}
+
+
+.remove-button {
+
+    width: auto !important;
+
+    border: none !important;
+
+    background: transparent !important;
+
+    color: red;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================================
+   TOTAL
+========================================= */
+
+.cart-total {
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #ff4b00;
+
+    padding: 15px 0;
+
+}
+
+
+/* =========================================
+   CHECKOUT FORM
+========================================= */
+
+.checkout-form label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-top: 10px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.checkout-form input,
+.checkout-form textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+}
+
+
+.checkout-form textarea {
+
+    height: 80px;
+
+    resize: vertical;
+
+}
+
+
+/* =========================================
+   PLACE ORDER
+========================================= */
+
+.place-order {
+
+    width: 100%;
+
+    height: 43px;
+
+    margin-top: 14px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #ff4b00;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+}
+
+
+.place-order:hover {
+
+    background: #e64000;
+
+}
+
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.success {
+
+    display: none;
+
+    text-align: center;
+
+    padding: 50px 10px;
+
+}
+
+
+.success.show {
+
+    display: block;
+
+}
+
+
+.success-check {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #168b3c;
+
+    color: #ffffff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 35px;
+
+    margin: 0 auto 18px;
+
+}
+
+
+.success h2 {
+
+    color: #168b3c;
+
+    font-size: 21px;
+
+}
+
+
+.success p {
+
+    color: #555555;
+
+    line-height: 1.5;
+
+}
+
+
+.continue-button {
+
+    background: #242424;
+
+    color: #ffffff;
+
+    border: none;
+
+    padding: 11px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width:600px) {
+
+    .products {
+
+        grid-template-columns: repeat(2,1fr);
+
+        gap: 5px;
+
+        padding-left: 4px;
+
+        padding-right: 4px;
+
+    }
+
+
+    .product-image {
+
+        height: 145px;
+
+    }
+
+
+    .product-name {
+
+        font-size: 12px;
+
+    }
+
+
+    .product-price {
+
+        font-size: 15px;
+
+    }
+
+
+    .add-button {
+
+        font-size: 11px;
+
+    }
+
+
+    .app-button {
+
+        width: 145px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     TOP HEADER
+========================================= -->
+
+<header>
+
+    <div class="logo">
+
+        Adire Heritage ✨
+
+    </div>
+
+
+    <button
+        class="cart-button"
+        onclick="openCart()"
+        aria-label="Shopping cart"
+    >
+
+        🛒
+
+        <span
+            id="cartCount"
+            class="cart-count"
+        >
+            0
+        </span>
+
+    </button>
+
+</header>
+
+
+<!-- =========================================
+     SEARCH
+========================================= -->
+
+<div class="search-section">
+
+    <div class="search-box">
+
+        <span class="search-icon">
+            🔍
+        </span>
+
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search fabrics..."
+            oninput="searchProducts()"
+        >
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     18 FABRICS
+========================================= -->
+
+<section
+    id="products"
+    class="products"
+></section>
+
+
+<!-- =========================================
+     CUSTOMER CARE - BOTTOM
+========================================= -->
+
+<div class="customer-care">
+
+    <span class="customer-care-title">
+        Customer Care
+    </span>
+
+
+    <br>
+
+
+    <span>
+
+        Contact us:
+
+        <a href="tel:+2348142848552">
+            +234 814 284 8552
+        </a>
+
+    </span>
+
+</div>
+
+
+<!-- =========================================
+     APP DOWNLOAD - BOTTOM
+========================================= -->
+
+<div class="app-download">
+
+
+    <!-- APP STORE -->
+
+    <a
+        href="https://www.apple.com/app-store/"
+        target="_blank"
+        class="app-button"
+    >
+
+        <span class="apple-logo">
+            
+        </span>
+
+
+        <span>
+
+            <small>
+                Download on the
+            </small>
+
+
+            <strong>
+                App Store
+            </strong>
+
+        </span>
+
+    </a>
+
+
+    <!-- GOOGLE PLAY -->
+
+    <a
+        href="https://play.google.com/store"
+        target="_blank"
+        class="app-button"
+    >
+
+        <span class="play-logo">
+            ▶
+        </span>
+
+
+        <span>
+
+            <small>
+                GET IT ON
+            </small>
+
+
+            <strong>
+                Google Play
+            </strong>
+
+        </span>
+
+    </a>
+
+</div>
+
+
+<!-- =========================================
+     CART
+========================================= -->
+
+<div
+    id="cartOverlay"
+    class="cart-overlay"
+    onclick="closeOutside(event)"
+>
+
+
+    <div class="cart-panel">
+
+
+        <div class="cart-header">
+
+            <h2>
+                Your Order
+            </h2>
+
+
+            <button
+                class="close-cart"
+                onclick="closeCart()"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <!-- CART CONTENT -->
+
+        <div id="cartContent">
+
+
+            <div id="cartItems">
+            </div>
+
+
+            <div
+                id="cartTotal"
+                class="cart-total"
+            >
+
+                Total: ₦0
+
+            </div>
+
+
+            <!-- CUSTOMER INFORMATION -->
+
+            <form
+                id="checkoutForm"
+                class="checkout-form"
+            >
+
+
+                <label>
+                    Full Name
+                </label>
+
+
+                <input
+                    type="text"
+                    name="name"
+                    required
+                    placeholder="Your full name"
+                >
+
+
+                <label>
+                    Email
+                </label>
+
+
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="your@email.com"
+                >
+
+
+                <label>
+                    Phone Number
+                </label>
+
+
+                <input
+                    type="tel"
+                    name="phone"
+                    required
+                    placeholder="0800 000 0000"
+                >
+
+
+                <label>
+                    Delivery Address
+                </label>
+
+
+                <textarea
+                    name="address"
+                    required
+                    placeholder="Enter your delivery address"
+                ></textarea>
+
+
+                <button
+                    class="place-order"
+                    type="submit"
+                >
+
+                    Place Order
+
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+
+        <!-- =====================================
+             SUCCESS MESSAGE
+        ====================================== -->
+
+        <div
+            id="success"
+            class="success"
+        >
+
+
+            <div class="success-check">
+
+                ✓
+
+            </div>
+
+
+            <h2>
+
+                Your order has been
+                successfully placed!
+
+            </h2>
+
+
+            <p>
+
+                Thank you for shopping with
+
+                <strong>
+                    Adire Heritage ✨
+                </strong>
+
+                <br>
+                <br>
+
+                Your order has been
+                received successfully.
+
+            </p>
+
+
+            <button
+                class="continue-button"
+                onclick="continueShopping()"
+            >
+
+                Continue Shopping
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+
+/* =========================================
+   PRODUCTS
+========================================= */
+
+const products = [
+
+    {
+        name: "Classic Indigo",
+        price: 25000,
+        image: "fabric 1.jpg"
+    },
+
+
+    {
+        name: "Sunset Eleko",
+        price: 25000,
+        image: "fabric 2.jpg"
+    },
+
+
+    {
+        name: "Alabere Silk",
+        price: 25000,
+        image: "fabric 3.jpg"
+    },
+
+
+    {
+        name: "Oniko Design",
+        price: 25000,
+        image: "fabric 4.jpg"
+    },
+
+
+    {
+        name: "Royal Adire",
+        price: 25000,
+        image: "fabric 5.jpg"
+    },
+
+
+    {
+        name: "Pink Heritage",
+        price: 25000,
+        image: "fabric 6.jpg"
+    },
+
+
+    {
+        name: "Olumo Pattern",
+        price: 25000,
+        image: "fabric 7.jpg"
+    },
+
+
+    {
+        name: "Midnight Blue",
+        price: 25000,
+        image: "fabric 8.jpg"
+    },
+
+
+    {
+        name: "Aso Oke Mix",
+        price: 25000,
+        image: "fabric 9.jpg"
+    },
+
+
+    {
+        name: "Golden Indigo",
+        price: 25000,
+        image: "fabric 10.jpg"
+    },
+
+
+    {
+        name: "Ile Aso",
+        price: 25000,
+        image: "fabric 11.jpg"
+    },
+
+
+    {
+        name: "Adire Wave",
+        price: 25000,
+        image: "fabric 12.jpg"
+    },
+
+
+    {
+        name: "Oyo Heritage",
+        price: 25000,
+        image: "fabric 13.jpg"
+    },
+
+
+    {
+        name: "Blue Bloom",
+        price: 25000,
+        image: "fabric 14.jpg"
+    },
+
+
+    {
+        name: "Lagos Indigo",
+        price: 25000,
+        image: "fabric 15.jpg"
+    },
+
+
+    {
+        name: "Heritage Lines",
+        price: 25000,
+        image: "fabric 16.jpg"
+    },
+
+
+    {
+        name: "Purple Eleko",
+        price: 25000,
+        image: "fabric 17.jpg"
+    },
+
+
+    {
+        name: "Adire Classic",
+        price: 25000,
+        image: "fabric 18.jpg"
+    }
+
+];
+
+
+/* =========================================
+   CART
+========================================= */
+
+let cart = {};
+
+
+/* =========================================
+   MONEY
+========================================= */
+
+function money(number) {
+
+    return "₦" +
+        number.toLocaleString("en-NG");
+
+}
+
+
+/* =========================================
+   DISPLAY PRODUCTS
+========================================= */
+
+function displayProducts(list = products) {
+
+    const container =
+        document.getElementById("products");
+
+
+    container.innerHTML = "";
+
+
+    list.forEach(
+        product => {
+
+
+            const index =
+                products.indexOf(product);
+
+
+            const card =
+                document.createElement("article");
+
+
+            card.className =
+                "product-card";
+
+
+            card.innerHTML = `
+
+                <img
+                    class="product-image"
+                    src="${product.image}"
+                    alt="${product.name}"
+                >
+
+
+                <div
+                    class="product-details"
+                >
+
+
+                    <p
+                        class="product-name"
+                    >
+
+                        ${product.name}
+
+                    </p>
+
+
+                    <p
+                        class="product-price"
+                    >
+
+                        ${money(product.price)}
+
+                    </p>
+
+
+                    <button
+                        class="add-button"
+                        onclick="addToCart(${index})"
+                    >
+
+                        Add to Cart
+
+                    </button>
+
+
+                </div>
+
+            `;
+
+
+            container.appendChild(card);
+
+        }
+    );
+
+
+    if (list.length === 0) {
+
+        container.innerHTML = `
+
+            <div style="
+                grid-column:1/-1;
+                text-align:center;
+                padding:40px;
+                color:#777;
+            ">
+
+                No fabric found.
+
+            </div>
+
+        `;
+
+    }
+
+}
+
+
+/* =========================================
+   SEARCH
+========================================= */
+
+function searchProducts() {
+
+    const search =
+        document
+        .getElementById("searchInput")
+        .value
+        .toLowerCase()
+        .trim();
+
+
+    if (!search) {
+
+        displayProducts(products);
+
+        return;
+
+    }
+
+
+    const results =
+        products.filter(
+            product =>
+                product.name
+                .toLowerCase()
+                .includes(search)
+        );
+
+
+    displayProducts(results);
+
+}
+
+
+/* =========================================
+   ADD TO CART
+========================================= */
+
+function addToCart(index) {
+
+    if (cart[index]) {
+
+        cart[index]++;
+
+    }
+
+    else {
+
+        cart[index] = 1;
+
+    }
+
+
+    updateCart();
+
+    openCart();
+
+}
+
+
+/* =========================================
+   UPDATE CART
+========================================= */
+
+function updateCart() {
+
+    const cartItems =
+        document.getElementById("cartItems");
+
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+
+    const cartTotal =
+        document.getElementById("cartTotal");
+
+
+    let count = 0;
+
+    let total = 0;
+
+
+    cartItems.innerHTML = "";
+
+
+    Object.keys(cart).forEach(
+        key => {
+
+
+            const index =
+                Number(key);
+
+
+            const quantity =
+                cart[index];
+
+
+            const product =
+                products[index];
+
+
+            count += quantity;
+
+
+            total +=
+                product.price *
+                quantity;
+
+
+            const item =
+                document.createElement("div");
+
+
+            item.className =
+                "cart-item";
+
+
+            item.innerHTML = `
+
+                <img
+                    class="cart-item-image"
+                    src="${product.image}"
+                    alt="${product.name}"
+                >
+
+
+                <div
+                    class="cart-item-info"
+                >
+
+
+                    <div
+                        class="cart-item-name"
+                    >
+
+                        ${product.name}
+
+                    </div>
+
+
+                    <div
+                        class="cart-item-price"
+                    >
+
+                        ${money(product.price)}
+
+                    </div>
+
+
+                    <div
+                        class="quantity"
+                    >
+
+
+                        <button
+                            onclick="changeQuantity(${index},-1)"
+                        >
+                            −
+                        </button>
+
+
+                        <span>
+                            ${quantity}
+                        </span>
+
+
+                        <button
+                            onclick="changeQuantity(${index},1)"
+                        >
+                            +
+                        </button>
+
+
+                        <button
+                            class="remove-button"
+                            onclick="removeFromCart(${index})"
+                        >
+
+                            Remove
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+            `;
+
+
+            cartItems.appendChild(item);
+
+        }
+    );
+
+
+    if (count === 0) {
+
+        cartItems.innerHTML =
+            "<p>Your cart is empty.</p>";
+
+    }
+
+
+    cartCount.textContent =
+        count;
+
+
+    cartTotal.textContent =
+        "Total: " +
+        money(total);
+
+}
+
+
+/* =========================================
+   CHANGE QUANTITY
+========================================= */
+
+function changeQuantity(index, amount) {
+
+    cart[index] += amount;
+
+
+    if (cart[index] <= 0) {
+
+        delete cart[index];
+
+    }
+
+
+    updateCart();
+
+}
+
+
+/* =========================================
+   REMOVE ITEM
+========================================= */
+
+function removeFromCart(index) {
+
+    delete cart[index];
+
+    updateCart();
+
+}
+
+
+/* =========================================
+   OPEN CART
+========================================= */
+
+function openCart() {
+
+    document
+        .getElementById("cartOverlay")
+        .classList.add("open");
+
+}
+
+
+/* =========================================
+   CLOSE CART
+========================================= */
+
+function closeCart() {
+
+    document
+        .getElementById("cartOverlay")
+        .classList.remove("open");
+
+}
+
+
+/* =========================================
+   CLOSE OUTSIDE
+========================================= */
+
+function closeOutside(event) {
+
+    if (
+        event.target.id ===
+        "cartOverlay"
+    ) {
+
+        closeCart();
+
+    }
+
+}
+
+
+/* =========================================
+   PLACE ORDER
+========================================= */
+
+document
+    .getElementById("checkoutForm")
+    .addEventListener(
+        "submit",
+        function(event) {
+
+
+            event.preventDefault();
+
+
+            if (
+                Object.keys(cart).length === 0
+            ) {
+
+                alert(
+                    "Please add a fabric to your order first."
+                );
+
+                return;
+
+            }
+
+
+            showSuccess();
+
+        }
+    );
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+function showSuccess() {
+
+    document
+        .getElementById("cartContent")
+        .style.display = "none";
+
+
+    document
+        .getElementById("success")
+        .classList.add("show");
+
+}
+
+
+/* =========================================
+   CONTINUE SHOPPING
+========================================= */
+
+function continueShopping() {
+
+    document
+        .getElementById("success")
+        .classList.remove("show");
+
+
+    document
+        .getElementById("cartContent")
+        .style.display = "block";
+
+
+    document
+        .getElementById("checkoutForm")
+        .reset();
+
+
+    cart = {};
+
+
+    updateCart();
+
+
+    closeCart();
+
+}
+
+
+/* =========================================
+   START
+========================================= */
+
+displayProducts();
+
+updateCart();
+
+</script>
+
+
+</body>
+
+</html>
